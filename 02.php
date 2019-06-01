@@ -36,3 +36,7 @@ $calendar_2018 = ["January" => "1月",
     ];
     
     echo $calendar_2018["December"];
+
+//課題完了
+
+?>

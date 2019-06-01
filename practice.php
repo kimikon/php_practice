@@ -104,3 +104,74 @@ echo $result;
 $a = 3;
 $b = 7;
 echo $a + $b;
+echo "\n";
+
+
+$height = 230;
+if ($height < 150) {
+    echo "150cm 未満の方はご乗車できません。";
+} else if ($height >= 200){
+    echo "200cm　以上の方はご乗車できません。";
+}else {
+    echo "ご乗車になれます。";
+}
+
+echo "\n";
+
+$weekday = "木曜";
+
+switch ($weekday) {
+case "月曜":
+case "木曜":
+echo "可燃ごみの日です。";
+break;
+case "水曜":
+echo "資源ごみの日です。";
+
+default;
+echo "回収はありません。";
+
+}
+
+echo "\n";
+$a = 3;
+$b = 3;
+$c = "3";
+
+var_dump($a == $b);
+var_dump($a != $b);
+var_dump($a > $b); 
+var_dump($a >= $b);
+var_dump($a >= $b);
+
+echo "\n";
+
+// 13　関数
+
+function sum(){
+    $result = 0;
+    
+    for($i = 1; $i <= 10; $i++){
+        $result += $i;
+    }
+    }
+    echo $result;
+    
+
+
+echo "\n";
+
+// 練習　12
+
+$total = 0;
+echo $total;
+//=> 0 と表示される。
+
+// $iが0から始まり、$iが１００以下の間繰り返し処理を行う。
+for ($i = 0; $i <= 100; $i++) {
+  $total += $i;
+}
+echo $total;
+
+
+?>
